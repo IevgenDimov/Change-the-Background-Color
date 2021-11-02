@@ -2,6 +2,7 @@ const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
 
 const btn = document.getElementById('btn');
 const color = document.querySelector('.color')
+const box = document.querySelector(".box")
 
 
 btn.addEventListener('click', function(){
@@ -17,10 +18,9 @@ btn.addEventListener('click', function(){
   }
 
 //  Targets the body of the document and using the style method changes the background color to the value of hexColor
-   document.body.style.backgroundColor = hexColor
+   box.style.backgroundColor = hexColor
    color.textContent = hexColor;
    
-   console.log(hexColor)
 
    
 })
